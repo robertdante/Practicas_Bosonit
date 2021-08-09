@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Welcome') {
+            steps {
+                echo 'Welcome Back'
+            }
+        }
+
+        stage('Calendar') {
+            steps {
+                sh('date')
+            }
+        }
+    }
+ }
