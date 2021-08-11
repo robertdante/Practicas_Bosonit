@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Welcome') {
             steps {
-               sh('echo "Welcome Back"')
+               sh 'echo "Welcome Back"'
             }
         }
 
         stage('Calendar') {
             steps {
-                sh('date')
+                sh 'date'
             }
         }
     }
